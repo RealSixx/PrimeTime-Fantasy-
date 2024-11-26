@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: red;
+    margin: 0 0 10px;
+}
+
+/* Navigation Bar */
+.nav-list {
+    display: inline-flex; /* Center navigation items */
+    justify-content: center;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0 15px; /* Add spacing between items */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Introduction Section */
+.intro {
+    padding: 20px;
+    background-color: #333;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.intro h2 {
+    margin: 0 0 10px;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Player Grid */
+.player-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four evenly spaced columns */
+    gap: 20px; /* Space between grid items */
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.player {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.player img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.player p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .player-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .player-container {
+        grid-template-columns: 1fr;
+    }
+}
